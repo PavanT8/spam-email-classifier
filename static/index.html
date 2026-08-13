@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Analyzer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Spam Analyzer</h1>
+            <p>Paste an email to analyze its spam likelihood.</p>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <textarea id="email-content" placeholder="Paste email content here..."></textarea>
+            </div>
+            
+            <button id="analyze-btn">Analyze Email</button>
+
+            <div id="result-container" class="hidden">
+                <div class="result-card">
+                    <h2 id="result-label">Result</h2>
+                    <p id="result-confidence">Confidence: --%</p>
+                </div>
+            </div>
+            
+            <div id="error-container" class="hidden">
+                <p id="error-message"></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
